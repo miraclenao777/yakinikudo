@@ -1,0 +1,824 @@
+﻿/* CSS Document */
+
+/*■初期設定*/
+
+body{
+	background-color:#FFFF66;/*背景色*/
+	color:#000000;/*通常のテキストカラー*/
+	height:100%;
+	
+}
+a:link {
+	 color: #0000FF; 
+	 text-decoration:none;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/
+}
+a:visited { 
+	color: #3333FF; 
+	text-decoration:none;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/
+}
+a:hover   {
+	color: #FF3333;
+	text-decoration:none;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/ 
+}
+a:active  { 
+	color: #FF0000; 
+	text-decoration:none;/*マウスが乗った時下線を表示（つけない場合は underline を none へ）*/
+}	
+
+
+/*■初期設定ここまで*/
+
+
+
+*{ margin:0; padding:0;}
+img{ border:0;}
+
+table,div{
+	margin:auto;
+}
+
+/*■フォントサイズ調整*/
+body {
+    font-size: 13px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+body{
+	text-align:center;
+	}
+
+/*■レイアウトセレクタ*/
+.CNT{
+	text-align:center;
+	}
+.L{
+	text-align:left;
+	}
+.R{
+	text-align:right;
+	}
+
+
+/* base layout*/
+#bg{
+	width:1080px;       
+	text-align:center;
+	}
+#container{
+	width:1080px;
+	margin:auto;	
+	text-align:center;
+	}
+	
+/* header */
+h1{
+font-size:10px;
+	}	
+#header{
+	width:1040px;
+	height:110px;
+	border:solid;
+	border-width:0 0 0 0;
+	margin:1 1 1 1;
+	text-align:center;
+	}
+#header h1{
+
+	height:80px;
+	line-height:80px;
+	font-size:50px;
+	color:#000000;
+	font-weight:normal;
+	text-indent:10px;
+	filter:shadow(color=#FFFFFF,direction=135);
+	}
+#header h2{
+	padding:4px 0 0 10px;
+	font-weight:normal;
+	}
+
+/* pan1 */	
+#pan1{
+	width:1040px;
+	border:solid;
+	border-width:0 0 0 0;
+	margin:5px 5px 5px 5px;
+	text-align:left;
+	font-size:12px;	
+	float:left;
+	}
+#pan1 h2{
+	font-size:12px;
+	color:#000000;
+	font-weight:normal;
+	text-indent:10px;
+	}
+#pan1 h2{
+	padding:4px 0 0 10px;
+	font-weight:normal;
+	} 
+ul.pan1 {
+	margin: 0;
+	padding: 0;
+	border-bottom: 0 #ddd solid;
+}
+ul.pan1 li {
+	float: left;
+	margin: 0 0 0 1px;
+	position: relative;
+	bottom: 0;
+	list-style-type: none;
+	border: 0 #ddd solid;
+	border-top: 0 #ddd solid;
+	border-bottom: 0 #ddd solid;
+}
+
+ul.pan1 li a {
+	color: #000;
+	display: block;
+	padding: 3px 10px 5px;
+	text-decoration: none;
+	background: #FFFFFF;
+}
+ul.pan1 li a.blue {
+	border-top: 5px #2384dc solid;
+}
+ul.pan1 li a.green {
+	border-top: 5px #4cbb47 solid;
+}
+ul.pan1 li a.red {
+	border-top: 5px #dd1d25 solid;
+}
+ul.pan1 li a.yellow {	
+	border-top: 5px #ffd242 solid;
+}
+ul.pan1 li a.chinpin {	
+	border-top: 5px #ffd242 solid;
+	font-family:HGP行書体;
+}
+ul.pan1 li a:hover {
+	position: relative;
+	bottom: 6px;
+}
+/* pan2 */	
+#pan2{
+	width:1040px;
+	border:solid;
+	border-width:0 0 0 0;
+	margin:5px 5px 5px 10px;	
+	text-align:left;
+	float:left;
+	}
+#pan2 h2{
+	line-height:80px;
+	font-size:12px;
+	color:#000000;
+	font-weight:normal;
+	text-indent:10px;
+	padding:4px 0 0 10px;
+	} 
+		
+/*main*/
+
+#wrapper{
+	width:1080px;
+	overflow: hidden;  
+	overflow: visible;  
+	min-height: 100%;  
+	height: auto;  
+	padding-bottom: 32767px;  
+	margin-bottom: -32767px;   
+	padding-bottom: 0;  
+	margin-bottom: 0;   
+	height: 100%;  
+ 	
+	float:left;
+	}
+#main{
+	width:820px;
+	float:right;	
+	text-align:left;
+	border:solid #FF9900;		
+	border-width:0px 0px 0px 0px;
+	margin:5px 5px 5px 5px;
+	}
+#main h2 {
+    font-size: 23px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#main h3 {
+    font-size: 19px; /* モダンブラウザ */
+	color: #330000; 
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#main p {
+    font-size: 14px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#main p.news_category {
+    font-size: 13px; /* モダンブラウザ */
+    font-weight:bold;
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#main table {
+    width:660px;
+    border-top:1px solid #0066FF;
+    border-left:1px solid #0066FF;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#main th {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    line-height: 120%;
+    text-align: left;
+}
+#main td {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    text-align: left;
+}
+#index_left{
+	width:190px;
+	float:left;
+	height:auto;		
+	text-align:left;
+	border:solid #FF9900;		
+	border-width:0px 0px 0px 0px;
+	margin:35px 0px 5px 0px;
+	}
+#index_body{
+	width:600px;
+	float:left;	
+	height:auto;	
+	text-align:left;
+	border:solid #FF9900;		
+	border-width:0px 0px 0px 0px;
+	margin:5px 0px 5px 0px;
+	}
+#index_body h2 {
+    font-size: 23px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#index_body h3 {
+    font-size: 19px; /* モダンブラウザ */
+	color: #330000; 
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#index_body p {
+    font-size: 14px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#index_box{
+	width:580px;
+	text-align:left;
+	border:solid #FFCC00;	
+        background-color:#FFFF66;/*背景色*/		
+	border-width:0px 0px 0px 0px ;
+	margin:10px 5px 10px 5px;	
+	}
+#index_box table {
+    width:570px;
+    border-top:1px solid #0066FF;
+    border-left:1px solid #0066FF;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#index_box th {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    line-height: 120%;
+    text-align: left;
+}
+#index_box td {
+    width:190px;
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    text-align: left;
+	vertical-align:top;    
+}			
+#submit_form{
+	width:580px;
+	float:right;	
+	text-align:center;
+	border:solid #FF9900;		
+	border-width:0 0 0 0;
+	margin:5px 5px 5px 5px;	
+	}
+#errmsg{
+	float:center;	
+	text-align:center;
+	color:#FF0000;
+	border:solid #FF9900;		
+	border-width:0 0 0 0;
+	margin:5px 5px 5px 5px;	
+	}
+
+/* category list */
+
+#category_list{
+	width:800px;
+	float:right;	
+	text-align:left;
+	border:solid #0000FF;	
+	border-width:0 0 0 0 ;
+	margin:1px 1px 1px 1px;
+}
+#searchbtn{
+	width:800px;
+	float:right;	
+	text-align:center;
+	border:solid #0000FF;	
+	border-width:0 0 0 0 ;
+	margin:10px 10px 10px 10px;
+}
+#category_list h2 {
+    font-size: 23px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#category_list p {
+    font-size: 14px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#category_list table {
+    width:800px;
+    border-top:0px solid #0066FF;
+    border-left:0px solid #0066FF;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#category_list td {
+	width: 200px;
+    padding: 2px;
+    border-right:0px solid #0066FF;
+    border-bottom:0px solid #0066FF;
+    text-align: left;
+}
+
+#search_box{
+	width: 660px;
+	text-align:left;
+	border:solid #FFCC00;	
+        background-color:#FFFF66;/*背景色*/		
+	border-width:0px 0px 0px 0px ;
+	margin:5px 5px 5px 5px;	
+	}	
+#search_box h2 {
+    font-size: 18px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#search_box h3 {
+    font-size: 16px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#search_box p {
+    font-size: 13px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#search_box th {
+    width: 120px;
+	text-align:center;
+}
+#search_box td {
+    width: 540px;
+	text-align:left;
+}
+#item{
+	width: 780px;
+	text-align:left;
+	border:solid #FF9900;		
+	border-width:1px 1px 1px 1px ;
+	margin:10px 10px 10px 10px;
+	}
+#item_box{
+	width: 660px;
+	text-align:left;
+	border:solid #FFCC00;	
+        background-color:#FFFF66;/*背景色*/		
+	border-width:0px 0px 0px 0px ;
+	margin:5px 5px 5px 5px;	
+	}	
+#item_box h2 {
+    font-size: 18px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#item_box h3 {
+    font-size: 16px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#item_box p {
+    font-size: 13px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#item_box td.image {
+    width: 60px;
+	text-align:center;
+}
+#item_box td.item {
+    width: 500px;
+	text-align:left;
+	vertical-align:top;
+}
+#item_box a.menu {
+	font-weight:bold;
+	font-size:18px;
+}
+#item_box a.name {
+	font-size:18px;
+}
+#item_box dd.price {
+	font-weight:bold;
+	font-size:18px;
+}
+#item_box td.item_sel  {
+    width: 60px;
+    height: 20px;
+	text-align:left;
+	vertical-align:middle;
+	border-width:0px 0px 1px 0px ;
+}
+#item_box td.item_btn {
+    height: 20px;
+	text-align:left;
+	vertical-align:middle;
+	border-width:0px 1px 1px 1px ;	
+}
+/* detail */
+#detail{
+	width: 800px;
+	float:right;	
+	text-align:left;
+	border:solid #FFCC00;	
+	border-width:1px 1px 1px 1px;
+	margin:10px 10px 10px 10px;
+}
+
+#detail .chin {
+	font-family:HGP行書体;
+}
+#detail dl {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#detail dt{
+	font-weight:bold;
+	font-size:18px;
+	line-height: 1.2em;
+	margin:0px 0px 0px 0px;
+	padding: 0px 0px 0px 15px;
+	background-repeat:no-repeat;
+	background-position:0% 50%;
+}
+
+#detail dd {
+	font-size:14px;
+	margin:  5px 0px 0px 30px;
+	padding: 0px 0px 0px 0px;
+	line-height:120%;
+}
+
+#detail h2 {
+    font-size: 23px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#detail h3 {
+    font-size: 16px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#detail p {
+    font-size: 13px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#detail table {
+    width:780px;
+	margin:10px 10px 10px 10px;
+	padding:10px 10px 10px 10px;	
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+#detail td.image {
+    width: 300px;
+    height:300px;
+	text-align:left;
+}
+#detail td.item {
+    width: 260px;
+	text-align:center;
+	caption-side: top;	
+}
+#detail td.location {
+    width: 80px;
+    height: 20px;
+	text-align:left;
+	vertical-align:middle;
+
+}
+#detail td.location2 {
+    height: 20px;
+	text-align:left;
+	vertical-align:middle;
+	padding:1px 1px 1px 1px;	
+}
+#detail td.image2 {
+    height:280px;
+	text-align:left;
+    vertical-align:top;	
+	padding:1px 1px 1px 1px;
+}
+#detail a.menu {
+	font-weight:bold;
+	font-size:20px;
+}
+#detail a.menubig {
+	font-weight:bold;
+	font-size:24px;
+}
+#detail a.name {
+	font-size:18px;
+}
+#detail dd.price {
+	font-weight:bold;
+	font-size:18px;
+}
+
+/* news_detail */
+#news_detail{
+	width: 660px;
+	float:right;	
+	text-align:left;
+	border:solid #FFCC00;	
+	border-width:1px 1px 1px 1px;
+	margin:10px 10px 10px 10px;
+}
+
+#news_detail h2 {
+    font-size: 23px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#news_detail h3 {
+    font-size: 16px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#news_detail p {
+    font-size: 13px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#news_detail table {
+    width:600px;
+	margin:10px 10px 10px 10px;
+	border-width:0px 0px 0px 0px;	
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+#news_detail td.image {
+    width: 160px;
+	border-width:0px 0px 0px 0px;    
+	text-align:left;
+}
+#news_detail td.snippet {
+	vertical-align:top;
+    width: 420px;
+	text-align:left;
+	border-width:0px 0px 0px 0px;	
+	caption-side: top;	
+}
+
+/* top publish */	
+#toppub{
+	width:960px;
+	border:solid #CCFFFF;
+	text-align:center;
+	float:left;
+	border-width:1px 1px 1px 1px ;
+	margin:10px 10px 10px 10px;	
+	}
+#toppub p {
+    font-size: 12px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#toppub td.image {
+    width: 60px;
+	text-align:center;
+}
+#toppub td.item {
+    width: 780px;
+	text-align:left;
+}
+#toppub a.menu {
+	font-weight:bold;
+	font-size:14px;
+}
+#toppub a.name {
+	font-size:14px;
+}
+#toppub dd.price {
+	font-weight:bold;
+	color:#ff0000;
+	font-size:14px;
+}
+/* side */
+#side{
+	width:240px;
+	height:auto;
+	float:right;	
+	text-align:left;
+	border:solid #FF9900;		
+	border-width:1px 1px 1px 1px ;
+	margin:10px 1px 10px 1px;
+	}
+#side h2 {
+    font-size: 12px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#side p {
+    font-size: 12px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#side_box{
+	width:210px;
+	text-align:left;
+	border:solid #99FF00;	
+	border-width:0px 0px 0px 0px ;
+	margin:5px 5px 5px 5px;	
+	}	
+#side_box p {
+    font-size: 12px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#side_box td.image {
+    width: 60px;
+	text-align:center;
+}
+#side_box td.item {
+    width: 150px;
+	text-align:left;
+}
+#side_box a.menu {
+	font-weight:bold;
+	font-size:12px;
+}
+#side_box a.name {
+	font-size:12px;
+}
+#side_box dd.price {
+	font-weight:bold;
+	color:#ff0000;
+	font-size:12px;
+}
+
+/* master */
+#tools{
+	width:580px;
+	float:right;	
+	text-center;
+	border:solid #FF9900;		
+	border-width:1px 1px 1px 1px ;
+	margin:5px 5px 5px 5px;	
+	}
+#tools h2 {
+    font-size: 16px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+#tools p {
+    font-size: 13px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#tools table {
+    width: 530px;
+    border-top:1px solid #0066FF;
+    border-left:1px solid #0066FF;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#tools th {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    line-height: 120%;
+    text-align: left;
+}
+#tools td {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    text-align: left;
+}
+
+#footer{
+	width:1080px;
+clear: both;		
+	height:80px;
+	border:solid;
+	border-width:0 0 0 0;
+	margin:1 1 1 1;		
+	text-align:center;
+	}
+	
+#structure{
+	width:960px;
+	text-align:left;
+	}	
+	
+	
+
+#back{
+	width:960px;
+	float:right;	
+	text-align:left;
+	border:solid #FF9900;		
+	border-width:0px 0px 0px 0px ;
+	margin:10px 10px 10px 10px;
+	}
+#back h2 {
+    font-size: 23px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#back h3 {
+    font-size: 19px; /* モダンブラウザ */
+	color: #330000; 
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#back p {
+    font-size: 14px; /* モダンブラウザ */
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#back p.news_category {
+    font-size: 13px; /* モダンブラウザ */
+    font-weight:bold;
+    *font-size: 80%; /* IE 7 */
+    *font: 80%; /* IE 6以下 */
+}
+
+#back table {
+    border-top:1px solid #0066FF;
+    border-left:1px solid #0066FF;
+    border-collapse:collapse;
+    border-spacing: 0;
+}
+
+#back th {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    line-height: 120%;
+    text-align: left;
+}
+#back td {
+    padding: 2px;
+    border-right:1px solid #0066FF;
+    border-bottom:1px solid #0066FF;
+    text-align: left;
+}
+			
